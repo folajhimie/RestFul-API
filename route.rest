@@ -1,0 +1,31 @@
+
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/6018701e9f377a35086a0fee
+
+###
+
+POST http://localhost:3000/subscribers
+content-Type: application/json
+
+{
+    "name": "Amazing person",
+    "subscribeToChannel":"Web Dev Simplified"
+}
+
+###
+
+DELETE  http://localhost:3000/subscribers/60186fe39f377a35086a0fec
+
+###
+
+PATCH http://localhost:3000/subscribers/6018701e9f377a35086a0fee
+content-Type: application/json
+
+{
+    "name": "Hillsong Worship",
+    "subscribeToChannel": "Net Ninja"
+    
+}
